@@ -1,0 +1,108 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    min-height: 100%;
+
+}
+.logoImage {
+    text-align: center;
+    padding-top: 3px;
+    background: transparent;
+}
+
+#cloudName {
+    color: aliceblue;
+    text-align: center;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menuList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.main-Class {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%;
+    border: 3px solid rgb(214, 157, 12); 
+}
+@media (max-width:800px) {
+    .main-Class {
+        max-height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+h1 {
+    color: rgb(214, 157, 12);
+    text-align: center;
+
+}
+
+.leftSide {
+
+    box-sizing: border-box;
+    flex: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    overflow-y: auto;    
+}
+
+.food-specialsList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 5px solid white;
+   
+}
+
+.firstListItem,
+.secondListItem,
+.thirdListItem {
+    list-style-type: none;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.foodImg {
+    width: 14em; 
+    /* height: 14em;  */
+   object-fit: contain;
+
+}
+
+/* .menuTable{
+
+} */
+#addCart1 {
+    width: 17em;
+    height: 2em;
+    background-color: rgba(184, 135, 11, 0.514);
+    margin-top: 1em;
+
+}
+
+#addCart1:hover {
+    transform: scale(.98);
+}
+
+#addCart1:active {
+    transform: translateY(1px);
+}

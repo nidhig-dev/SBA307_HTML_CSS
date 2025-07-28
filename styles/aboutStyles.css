@@ -1,0 +1,46 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    /* min-height: 100%; */
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border: 3px solid rgb(214, 157, 12);    
+}
+
+@media screen and (max-width:800px) {
+    .mainContainer {
+
+        max-height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .aboutUs {
+        max-height: 100vh;
+        flex-wrap: wrap;
+    }
+}
+
+
+.aboutUs {
+    flex: 70%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    overflow-y: auto;
+}
+
+
+.aboutusDesc::first-letter {
+    color: rgb(214, 157, 12);
+    font-size: x-large;
+}

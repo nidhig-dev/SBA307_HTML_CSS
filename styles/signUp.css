@@ -1,0 +1,102 @@
+.signUp {
+
+    flex: 30%;
+    background-color: rgba(128, 128, 128, 0.415);
+    padding: 20px 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:800px) {
+    .signUp {
+        max-height: 100vh;
+        flex-wrap: wrap;
+    }
+
+}
+
+.gif {
+    width: 200px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.updateText {
+    padding-top: 65px;
+    padding-bottom: 10px;
+    font-size: large;
+}
+
+.specialFont {
+
+    font-family: "Allura", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: larger;
+    animation-name: signup;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes signup {
+    from {
+        color: black;
+    }
+
+    to {
+        color: blue;
+    }
+
+}
+
+#searchBtn {
+
+    border-radius: 5px;
+    width: 15em;
+    height: 3em;
+}
+
+#firstnameText,
+#emailText {
+    width: 15em;
+    height: 2em;
+
+}
+
+.emailtextbox {
+    padding-top: 15px;
+}
+
+#goBtn {
+    width: 5em;
+    height: 3em;
+    background-color: rgb(214, 157, 12);
+    margin: 1em;
+    border: none;
+    border-radius: 8px;
+    /* animation-name: gobutton;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    box-shadow: 1px 1px 2px 1px; */
+}
+
+/* @keyframes gobutton {
+    from {
+        background-color: rgb(214, 157, 12);
+    }
+
+    to {
+        background-color: rgb(217, 255, 4);
+    }
+
+} */
+
+#goBtn:hover {
+    transform: scale(.98);
+}
+
+#goBtn:active {
+    transform: translateY(1px);
+}
