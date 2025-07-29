@@ -11,13 +11,14 @@ body {
 .logoImage {
     text-align: center;
     padding-top: 2px;
-    background: transparent;
+    background: transparent;    
 }
 /* Styling for website name. */
 #cloudName {
     color: aliceblue;
     text-align: center;
     font-size: x-large;
+    margin:0;
 }
 /* Special text for the word sign up for emphasis. */
 .specialNameFont {
