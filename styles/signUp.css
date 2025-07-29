@@ -1,12 +1,16 @@
+/* This CSS is styling the right section of every page. 
+It adds search bar and sign up form.
+It is included in all the pages except home page. */
 .signUp {
-
     flex: 30%;
+    /* Setting the background page as gray */
     background-color: rgba(128, 128, 128, 0.415);
     padding: 20px 0px;
     text-align: center;
     box-sizing: border-box;
 }
 
+/* For smaller screens */
 @media screen and (max-width:800px) {
     .signUp {
         max-height: 100vh;
@@ -15,30 +19,33 @@
 
 }
 
+/* Added a search gif on top of search bar  */
 .gif {
     width: 200px;
     height: 50px;
     padding-bottom: 10px;
 }
 
+/* Text for sign up updates */
 .updateText {
     padding-top: 65px;
     padding-bottom: 10px;
     font-size: large;
 }
 
+/* Special text for the word sign up for emphasis. */
 .specialFont {
-
     font-family: "Allura", cursive;
     font-weight: 800;
     font-style: normal;
-    font-size: larger;
+    font-size: x-large;
+    /* Added a CSS animation which will change the color of sign up text to blue. */
     animation-name: signup;
     animation-duration: 1s;
-    animation-iteration-count: 2;
-
+    animation-iteration-count: 5;
 }
 
+/* Added a CSS animation which will change the color of sign up text to blue. */
 @keyframes signup {
     from {
         color: black;
@@ -47,16 +54,16 @@
     to {
         color: blue;
     }
-
 }
 
+/* CSS for search bar */
 #searchBtn {
-
     border-radius: 5px;
     width: 15em;
     height: 3em;
 }
 
+/* CSS for User name and email text form */
 #firstnameText,
 #emailText {
     width: 15em;
@@ -64,10 +71,12 @@
 
 }
 
+/* Styles around the email text box  */
 .emailtextbox {
     padding-top: 15px;
 }
 
+/* CSS styling for the GO button */
 #goBtn {
     width: 5em;
     height: 3em;
@@ -75,28 +84,15 @@
     margin: 1em;
     border: none;
     border-radius: 8px;
-    /* animation-name: gobutton;
-    animation-duration: 6s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    box-shadow: 1px 1px 2px 1px; */
+    box-shadow: 1px 1px 1px;
 }
 
-/* @keyframes gobutton {
-    from {
-        background-color: rgb(214, 157, 12);
-    }
-
-    to {
-        background-color: rgb(217, 255, 4);
-    }
-
-} */
-
+/* CSS styling for hover effect */
 #goBtn:hover {
     transform: scale(.98);
 }
 
+/* CSS styling for clicked effect */
 #goBtn:active {
     transform: translateY(1px);
 }

@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet for nav bar -->
     <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- Stylesheet for about page -->
     <link rel="stylesheet" href="../styles/aboutStyles.css" />
+    <!-- Stylesheet for the right side section containing search bar and sign up! -->
     <link rel="stylesheet" href="../styles/signUp.css" />
+    <!-- Special font for sign up text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
     <title>Nidhi's cloud kitchen</title>
+    <!-- Internal Styling for My Image  -->
     <style>
         .nidhiImg {
             float: left;
             margin-right: 20px;
-            width: 40%;
+            width: 50%;
             height: 100%;
         }
     </style>
@@ -24,12 +29,13 @@
 </head>
 
 <body>
+    <!-- Nav Bar html code -->
     <nav style=" background-color: black; ">
         <div class="logoImage">
             <img src="../images/chef-hat.jpg" alt="Chef hat logo in orange" width="80px" />
         </div>
         <div>
-            <h1 id="cloudName">Nidhi's cloud kitchen</h1>
+            <h1 id="cloudName"><span class="specialNameFont">Nidhi's</span>&nbsp cloud kitchen</h1>
         </div>
         <div>
             <ul class="menuList">
@@ -39,9 +45,13 @@
             </ul>
         </div>
     </nav>
+    <!-- This is the main container with left section (about us) and right section (search and sign up). -->
     <div class="mainContainer">
+        <!-- About us section -->
         <div class="aboutUs">
+            <!-- My image -->
             <img class="nidhiImg" src="../images/Nidhi.jpg" alt="Nidhi" />
+            <!-- Description about me -->
             <div class="aboutusDesc">
 
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo recusandae
@@ -70,43 +80,33 @@
                 </p>
             </div>
         </div>
-
+        <!-- Sign up section is same as all pages. -->
         <div class="signUp">
+            <!-- Added a gif for search bar -->
             <img class="gif" src="../images/search-gif.gif" />
             <form>
-
+                <!-- Text box for Search bar -->
                 <div>
-                    <label>
-                        <input type="search" id="searchBtn" placeholder="Search for a recipe">
-                    </label>
+                    <input type="search" id="searchBtn" placeholder="Search for a recipe">
                 </div>
-
+                <!-- Text to ask customers to sign up! -->
                 <div class="updateText">
-                    <span class="specialFont">Sign up </span> for our daily special Updates!
+                    <!-- Added a special font for sign up text -->
+                    <span class="specialFont">Sign up </span> for our daily special updates!
                 </div>
                 <div>
-
+                    <!-- User name textbox -->
                     <div class="firstnameTextbox">
-                        <label>
-                            <input type="text" id="firstnameText" Placeholder="First Name">
-                        </label>
+                        <input type="text" id="firstnameText" Placeholder="First Name *" required>
                     </div>
+                    <!-- Email text box -->
                     <div class="emailtextbox">
-                        <label>
-                            <input type="text" id="emailText" Placeholder="Email: name@email.com">
-                        </label>
-
-
+                        <input type="email" id="emailText" Placeholder="Email*: name@email.com" required>
                     </div>
-                    <label>
-                        <input type="Submit" id="goBtn" Search value="GO">
-                    </label>
+                    <!-- Added a go button -->
+                    <input type="Submit" id="goBtn" Search value="GO">
                 </div>
             </form>
         </div>
-
-    </div>
-
 </body>
-
 </html>

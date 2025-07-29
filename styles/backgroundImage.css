@@ -1,20 +1,8 @@
-html,
+/* This CSS is just to add a background image to the home page. It is linked to home page only.
+Adding a background image and covering the entire background with it. */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    min-height: 100%;
     background-image: url('/images/Kheer.JPG');
     background-size: cover;
     background-repeat: no-repeat;
 
-}
-
-@media (max-width:300px) {
-    body {
-        background-image: url('/images/Kheer.JPG');
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
 }

@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet for nav bar -->
     <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- Stylesheet for this page -->
     <link rel="stylesheet" href="../styles/menuStyles.css" />
+    <!-- Stylesheet for the side section that has recipe search and sign up! -->
     <link rel="stylesheet" href="../styles/signUp.css" />
+    <!-- linking a special font class for the word sign up in the side section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Orbitron:wght@400..900&display=swap"
@@ -15,12 +19,13 @@
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <nav style=" background-color: black; ">
         <div class="logoImage">
             <img src="../images/chef-hat.jpg" alt="Chef hat logo in orange" width="80px" />
         </div>
         <div>
-            <h1 id="cloudName">Nidhi's cloud kitchen</h1>
+            <h1 id="cloudName"><span class="specialNameFont">Nidhi's</span>&nbsp cloud kitchen</h1>
         </div>
         <div>
             <ul class="menuList">
@@ -30,18 +35,21 @@
             </ul>
         </div>
     </nav>
-
-
-    <!-- <h1>Today's Menu</h1> -->
-
+    <!-- Entire page is in this div -->
     <div class="main-Class">
+        <!-- Left side of the page is in this div -->
         <div class="leftSide">
-
+            <!-- Listing all the items as a list. Each list item has food image and a table of details of food.   -->
             <ul class="food-specialsList">
-                <div class="firstListItem">
+                <!-- 1st List Item -->
+                <div class="allListItem">
                     <li>
-                        <img class="foodImg" src="../images/IMG_9829.JPG" alt="Pasta pic" />
+                        <img class="foodImg" src="../images/VegetablePasta.jpg" alt="Pasta pic" />
                     </li>
+                    <!-- Table for Item 1 that has 
+                        row 1 - Food Name
+                        row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                        row 3 - Add to Cart button-->
                     <table class="menuTable">
                         <form>
                             <tr>
@@ -50,7 +58,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Qnty 
+                                <td>Qty
                                     <form>
                                         <select name="dropdown" id="dropdown1">
                                             <option value="1">1</option>
@@ -63,7 +71,8 @@
                                             <option value="8">8</option>
                                             <option value="9">9</option>
                                             <option value="0" selected>0</option>
-                                        </select></form>
+                                        </select>
+                                    </form>
                                 </td>
                                 <td>$10.99</td>
                             </tr>
@@ -74,8 +83,13 @@
                         </form>
                     </table>
                 </div>
-                <div class="secondListItem">
-                    <li><img class="foodImg" src="../images/IMG_9921.JPG" alt="Pizza Pic" /></li>
+                <div class="allListItem">
+                    <!-- Second Item -->
+                    <li><img class="foodImg" src="../images/Vegetable Pizza.jpg" alt="Pizza Pic" /></li>
+                    <!-- Table for Item 2 that has 
+                            row 1 - Food Name
+                            row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                            row 3 - Add to Cart button-->
                     <table class="menuTable">
                         <form>
                             <tr>
@@ -85,7 +99,7 @@
                             </tr>
                             <tr>
 
-                                <td>Qnty <select name="dropdown" id="dropdown2">
+                                <td>Qty <select name="dropdown" id="dropdown2">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -106,18 +120,23 @@
                         </form>
                     </table>
                 </div>
-                <div class="thirdListItem">
-                    <li><img class="foodImg" src="../images/IMG_9829.JPG" alt="Poori pic" /></li>
+                <div class="allListItem">
+                    <!-- Third Item -->
+                    <li><img class="foodImg" src="../images/Matar-Paneer.jpg" alt="Matar Paneer pic" /></li>
                     <table class="menuTable">
+                        <!-- Table for Item 3 that has 
+                             row 1 - Food Name
+                             row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                             row 3 - Add to Cart button-->
                         <form>
                             <tr>
                                 <td colspan="2" style="text-align: center;">
-                                    <h3>Poori</h3>
+                                    <h3>Matar Paneer</h3>
                                 </td>
                             </tr>
                             <tr>
 
-                                <td>Qnty <select name="dropdown" id="dropdown3">
+                                <td>Qty <select name="dropdown" id="dropdown3">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -138,18 +157,23 @@
                         </form>
                     </table>
                 </div>
-                <div class="thirdListItem">
-                    <li><img class="foodImg" src="../images/IMG_9829.JPG" alt="Poori pic" /></li>
+                <div class="allListItem">
+                    <!-- Fourth Item -->
+                    <li><img class="foodImg" src="../images/Butter-Naan.jpg" alt="Butter Naan pic" /></li>
                     <table class="menuTable">
+                        <!-- Table for Item 4 that has 
+                             row 1 - Food Name
+                             row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                             row 3 - Add to Cart button-->
                         <form>
                             <tr>
                                 <td colspan="2" style="text-align: center;">
-                                    <h3>Poori</h3>
+                                    <h3>Butter Naan</h3>
                                 </td>
                             </tr>
                             <tr>
 
-                                <td>Qnty <select name="dropdown" id="dropdown3">
+                                <td>Qty <select name="dropdown" id="dropdown4">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -161,7 +185,7 @@
                                         <option value="9">9</option>
                                         <option value="0" selected>0</option>
                                     </select></td>
-                                <td>$10.99</td>
+                                <td>$3.99</td>
                             </tr>
                             <tr>
                                 <td colspan="2"><input name="addCart" id="addCart1" type="submit" value="Add to Cart" />
@@ -170,18 +194,23 @@
                         </form>
                     </table>
                 </div>
-                <div class="thirdListItem">
-                    <li><img class="foodImg" src="../images/IMG_9829.JPG" alt="Poori pic" /></li>
+                <div class="allListItem">
+                    <!-- Fifth Item -->
+                    <li><img class="foodImg" src="../images/Dal-Makhani.jpg" alt="Dal Makhani" /></li>
                     <table class="menuTable">
+                        <!-- Table for Item 5 that has 
+                            row 1 - Food Name
+                            row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                            row 3 - Add to Cart button-->
                         <form>
                             <tr>
                                 <td colspan="2" style="text-align: center;">
-                                    <h3>Poori</h3>
+                                    <h3>Dal Makhani</h3>
                                 </td>
                             </tr>
                             <tr>
 
-                                <td>Qnty <select name="dropdown" id="dropdown3">
+                                <td>Qty <select name="dropdown" id="dropdown5">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -202,18 +231,22 @@
                         </form>
                     </table>
                 </div>
-                <div class="thirdListItem">
-                    <li><img class="foodImg" src="../images/IMG_9829.JPG" alt="Poori pic" /></li>
+                <div class="allListItem">
+                    <!-- Sixth Item -->
+                    <li><img class="foodImg" src="../images/Tiramisu.jpg" alt="Tiramisu pic" /></li>
                     <table class="menuTable">
+                        <!-- Table for Item 6 that has 
+                         row 1 - Food Name
+                         row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                         row 3 - Add to Cart button-->
                         <form>
                             <tr>
                                 <td colspan="2" style="text-align: center;">
-                                    <h3>Poori</h3>
+                                    <h3>Tiramisu</h3>
                                 </td>
                             </tr>
                             <tr>
-
-                                <td>Qnty <select name="dropdown" id="dropdown3">
+                                <td>Qty <select name="dropdown" id="dropdown6">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -225,7 +258,7 @@
                                         <option value="9">9</option>
                                         <option value="0" selected>0</option>
                                     </select></td>
-                                <td>$10.99</td>
+                                <td>$4.99</td>
                             </tr>
                             <tr>
                                 <td colspan="2"><input name="addCart" id="addCart1" type="submit" value="Add to Cart" />
@@ -234,18 +267,23 @@
                         </form>
                     </table>
                 </div>
-                <div class="thirdListItem">
-                    <li><img class="foodImg" src="../images/IMG_9829.JPG" alt="Poori pic" /></li>
+                <div class="allListItem">
+                    <!-- Seventh Item -->
+                    <li><img class="foodImg" src="../images/Jalebi.jpg" alt="Jalebi pic" /></li>
                     <table class="menuTable">
+                        <!-- Table for Item 7 that has 
+                             row 1 - Food Name
+                             row 2 -  Quantity followed by a drop down box giving user the option to choose quantity to order.
+                             row 3 - Add to Cart button-->
                         <form>
                             <tr>
                                 <td colspan="2" style="text-align: center;">
-                                    <h3>Poori</h3>
+                                    <h3>Jalebi (2pc)</h3>
                                 </td>
                             </tr>
                             <tr>
 
-                                <td>Qnty <select name="dropdown" id="dropdown3">
+                                <td>Qty <select name="dropdown" id="dropdown7">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -257,7 +295,7 @@
                                         <option value="9">9</option>
                                         <option value="0" selected>0</option>
                                     </select></td>
-                                <td>$10.99</td>
+                                <td>$3.99</td>
                             </tr>
                             <tr>
                                 <td colspan="2"><input name="addCart" id="addCart1" type="submit" value="Add to Cart" />
@@ -266,36 +304,32 @@
                         </form>
                     </table>
                 </div>
-
-                <!-- <li></li>
-            <li></li>
-            <li></li> -->
             </ul>
         </div>
-
+        <!-- The right side section of the webpage-->
         <div class="signUp">
-
+            <!-- Added a gif for search bar -->
             <img class="gif" src="../images/search-gif.gif" />
-
             <form>
-
+                <!-- Text box for Search bar -->
                 <div>
                     <input type="search" id="searchBtn" placeholder="Search for a recipe">
                 </div>
-
+                <!-- Text to ask customers to sign up! -->
                 <div class="updateText">
-                    <span class="specialFont">Sign up </span> for our daily special Updates!
+                    <!-- Added a special font for sign up text -->
+                    <span class="specialFont">Sign up </span> for our daily special updates!
                 </div>
                 <div>
-
+                    <!-- User name textbox -->
                     <div class="firstnameTextbox">
-                        <input type="text" id="firstnameText" Placeholder="First Name">
+                        <input type="text" id="firstnameText" Placeholder="First Name *" required>
                     </div>
+                    <!-- Email text box -->
                     <div class="emailtextbox">
-                        <input type="text" id="emailText" Placeholder="Email: name@email.com">
-
-
+                        <input type="email" id="emailText" Placeholder="Email*: name@email.com" required>
                     </div>
+                    <!-- Added a go button -->
                     <input type="Submit" id="goBtn" Search value="GO">
                 </div>
             </form>

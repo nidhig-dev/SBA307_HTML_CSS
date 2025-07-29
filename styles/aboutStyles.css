@@ -3,10 +3,9 @@ html {
     margin: 0;
     height: 100%;
     box-sizing: border-box;
-    padding: 0;
-    /* min-height: 100%; */
+    padding: 0;    
 }
-
+/* CSS styling for main conatiner containing about section and sign up section */
 .mainContainer {
     display: flex;
     justify-content: space-between;
@@ -16,30 +15,27 @@ html {
     box-sizing: border-box;
     border: 3px solid rgb(214, 157, 12);    
 }
-
+/* For smaller screens,added media query that will change the flex direction and not wrap keeping the size of main class intact. */
 @media screen and (max-width:800px) {
     .mainContainer {
-
         max-height: 100vh;
         flex-direction: column;
         flex-wrap: nowrap;
     }
-
     .aboutUs {
         max-height: 100vh;
         flex-wrap: wrap;
     }
 }
-
-
+/* Making about us section 70% and sign up section 30% */
 .aboutUs {
     flex: 70%;
     box-sizing: border-box;
     padding: 20px 20px;
+    /* add a scroll bar if content overflows */
     overflow-y: auto;
 }
-
-
+/* Making the first letter of description larger and different color */
 .aboutusDesc::first-letter {
     color: rgb(214, 157, 12);
     font-size: x-large;

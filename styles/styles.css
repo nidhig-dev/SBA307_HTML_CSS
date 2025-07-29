@@ -7,24 +7,34 @@ body {
     min-height: 100%;
 
 }
-
+/* Styling for Chefs hat logo */
 .logoImage {
     text-align: center;
-    padding-top: 3px;
+    padding-top: 2px;
     background: transparent;
 }
-
+/* Styling for website name. */
 #cloudName {
     color: aliceblue;
     text-align: center;
+    font-size: x-large;
 }
-
+/* Special text for the word sign up for emphasis. */
+.specialNameFont {
+    font-family: "Allura", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35pt;    
+}
+/* Removing the underline from the links */
 nav a {
     color: aliceblue;
     text-decoration: none;
+    font-size: larger;
     
  }
- 
+ /*Removing the bullets from links that are part of a unordered list.
+  Also making the container flex to display them side by side.  */
 .menuList {
     list-style-type: none;
     display: flex;
@@ -33,6 +43,7 @@ nav a {
     padding: 0;
     
 }
+/* Adding a transition which changes the color of link when I mouse over it. */
 .menuList>a{
     color: aliceblue;
     transition-property: color;
@@ -40,9 +51,4 @@ nav a {
 }
 a:hover {
     color: rgb(214, 157, 12);
-}
-
-footer {
-    background-color: black;
-    color: aliceblue;
 }
