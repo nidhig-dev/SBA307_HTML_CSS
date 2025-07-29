@@ -1,7 +1,7 @@
 /* This CSS is just to add a background image to the home page. It is linked to home page only.
 Adding a background image and covering the entire background with it. */
 body {
-    background-image: url('/images/Kheer.JPG');
+    background-image: url('/images/Background-Image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
