@@ -72,18 +72,20 @@ body {
 #addCart1 {
     width: 17em;
     height: 2.5em;
-    background-color: rgba(184, 135, 11, 0.514);
+    background-color: rgb(214, 157, 12);
     margin-top: 1em;
     /* softening the edges */
     border-radius: 5px;
     /* added shadow effect around the boxes */
-    box-shadow: 1px 1px 1px;
+    box-shadow: .5px .5px 1px;
+    transition-property: all;
+    transition-duration: 2s;
 
 }
 
 /* Added to get the hover effect */
 #addCart1:hover {
-    transform: scale(.98);
+    transform: scale(.95);
 }
 
 /* Added to get the clicked effect */

@@ -45,7 +45,7 @@ nav a {
     
 }
 /* Adding a transition which changes the color of link when I mouse over it. */
-.menuList>a{
+.menuList a{
     color: aliceblue;
     transition-property: color;
     transition-duration: 2s;

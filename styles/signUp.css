@@ -85,11 +85,13 @@ It is included in all the pages except home page. */
     border: none;
     border-radius: 8px;
     box-shadow: 1px 1px 1px;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
 /* CSS styling for hover effect */
 #goBtn:hover {
-    transform: scale(.98);
+    transform: scale(.95);
 }
 
 /* CSS styling for clicked effect */
